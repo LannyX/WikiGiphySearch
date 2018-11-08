@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "wiki-giphy-info": {
+    "WikiGiphySearch": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/wiki-giphy-info",
+            "outputPath": "dist/WikiGiphySearch",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "wiki-giphy-info:build"
+            "browserTarget": "WikiGiphySearch:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "wiki-giphy-info:build:production"
+              "browserTarget": "WikiGiphySearch:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "wiki-giphy-info:build"
+            "browserTarget": "WikiGiphySearch:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "wiki-giphy-info-e2e": {
+    "WikiGiphySearch-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "wiki-giphy-info:serve"
+            "devServerTarget": "WikiGiphySearch:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "wiki-giphy-info:serve:production"
+              "devServerTarget": "WikiGiphySearch:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "wiki-giphy-info"
+  "defaultProject": "WikiGiphySearch"
 }
