@@ -1,0 +1,34 @@
+<div>
+  <a routerLink="/history">History</a>
+
+  <p>
+    Please enter search text, then click the search button
+  </p>
+
+  <div>
+    <input [(ngModel)]="searchText" />
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+    aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation" (click)="search()">Search</button>
+  </div>
+
+  <div *ngIf="wikiSearchResults">
+    <h3>
+      Result from Wikipedia: {{ wikiSearchResults.length }} results
+    </h3>
+    <div *ngFor="let wikiSearchResult of wikiSearchResults">
+      {{ wikiSearchResult }}
+    </div>
+  </div>
+
+  <div *ngIf="giphySearchResults">
+    <h3>
+      Result from Giphy: {{ giphySearchResults.length }} results
+    </h3>
+    
+    <div *ngFor="let imageUrl of giphySearchResults">
+      <img  src="{{ imageUrl }}">
+      <br>{{ imageUrl }}
+    </div>
+  </div>
+
+</div>
