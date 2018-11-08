@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class GiphyService {
 
-  giphyKey = 'zEmIDhsws9aZWUZu4srKlFdb87XeBttX';
+  giphyKey = '';
 
   // base url for Giphy API
   giphyBaseUrl = 'https://api.giphy.com/v1/gifs/search?';
